@@ -2,8 +2,7 @@
 
 Common CLIs packaged in containers with a HTTP interface
 
-[![Sponsor this](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&link=https://github.com/sponsors/openfaas)](https://github.com/sponsors/openfaas)
-[![build](https://github.com/openfaas/store-functions/actions/workflows/build.yaml/badge.svg)](https://github.com/openfaas/store-functions/actions/workflows/build.yaml)
+testing
 
 About these functions:
 
