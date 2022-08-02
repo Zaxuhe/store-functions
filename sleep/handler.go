@@ -10,7 +10,7 @@ import (
 // Handle a serverless request
 func Handle(req []byte) string {
 
-	sleepDuration := time.Second * 2
+	sleepDuration := time.Second * 20
 
 	if val, ok := os.LookupEnv("Http_X_Sleep"); ok && len(val) > 0 {
 		sleepDuration, _ = time.ParseDuration(val)
