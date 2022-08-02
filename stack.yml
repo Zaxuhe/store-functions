@@ -2,72 +2,11 @@ provider:
   name: openfaas
 
 functions:
-  cows:
-    lang: node14
-    handler: ./cows
-    image: ghcr.io/${OWNER:-openfaas}/cows:${TAG:-latest}
-
-  alpine:
-    lang: dockerfile
-    handler: ./alpine
-    image: ghcr.io/${OWNER:-openfaas}/alpine:${TAG:-latest}
-
-  curl:
-    lang: dockerfile
-    handler: ./curl
-    image: ghcr.io/${OWNER:-openfaas}/curl:${TAG:-latest}
-
-  shasum:
-    lang: dockerfile
-    handler: ./shasum
-    image: ghcr.io/${OWNER:-openfaas}/shasum:${TAG:-latest}
-
-  hey:
-    lang: dockerfile
-    handler: ./hey
-    image: ghcr.io/${OWNER:-openfaas}/hey:${TAG:-latest}
-
-  nmap:
-    lang: dockerfile
-    handler: ./nmap
-    image: ghcr.io/${OWNER:-openfaas}/nmap:${TAG:-latest}
-
-  nslookup:
-    lang: dockerfile
-    handler: ./nslookup
-    image: ghcr.io/${OWNER:-openfaas}/nslookup:${TAG:-latest}
-
-  nodeinfo:
-    lang: node14
-    handler: ./nodeinfo
-    image: ghcr.io/${OWNER:-openfaas}/nodeinfo:${TAG:-latest}
-
-  figlet:
-    lang: dockerfile
-    handler: ./figlet
-    image: ghcr.io/${OWNER:-openfaas}/figlet:${TAG:-latest}
-
-  imagemagick:
-    lang: dockerfile
-    handler: ./imagemagick
-    image: ghcr.io/${OWNER:-openfaas}/imagemagick:${TAG:-latest}
-
-  ffmpeg:
-    lang: dockerfile
-    handler: ./ffmpeg
-    image: ghcr.io/${OWNER:-openfaas}/ffmpeg:${TAG:-latest}
-
-
-  sentimentanalysis:
-    lang: dockerfile
-    handler: ./sentimentanalysis
-    image: ghcr.io/${OWNER:-openfaas}/sentimentanalysis:${TAG:-latest}
-
   sleep:
     lang: go
     handler: ./sleep
     image: ghcr.io/${OWNER:-openfaas}/sleep:${TAG:-latest}
     environment:
-      sleep_duration: 2s
+      sleep_duration: 10s
       combine_output: false
 
